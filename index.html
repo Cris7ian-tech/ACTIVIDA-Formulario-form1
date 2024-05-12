@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarea: Div-Span-Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="form-content">
+      <h2>Formulario de Registro</h2>
+
+      <form
+        action="https://formsubmit.co/cristian_ala2@hotmail.com"
+        method="POST"
+      >
+        <label for="Nombre">Nombre</label>
+        <input
+          type="text"
+          name="Nombre"
+          placeholder="Ingrese su nombre"
+          id="Nombre"
+        />
+
+        <label for="Apellido">Apellido</label>
+        <input
+          type="text"
+          name="Apellido"
+          placeholder="Ingrese su apellido"
+          id="Apellido"
+        />
+
+        <label for="Correo Electronico">Correo Electronico</label>
+        <input
+          type="email"
+          name="Correo Electronico"
+          placeholder="Ingrese su email"
+          id="email"
+        />
+
+        <label for="Contraseña">Contraseña</label>
+        <input
+          class="form-input"
+          type="password"
+          placeholder="Ingrese su contraseña"
+          id="pwd"
+          name="password"
+        />
+
+        <label for="subject">Asunto</label>
+        <input type="text" name="subject" id="subject" />
+
+        <label for="Comentarios">Comentarios</label>
+        <textarea
+          name="Comentarios"
+          id="Comentarios"
+          cols="10"
+          rows="5"
+        ></textarea>
+
+        <input class="button" type="submit" value="Enviar" />
+
+        <input type="hidden" name="_next" value="https://127.0.0.1:5500/." />
+        <input type="hidden" name="_captcha" value="False" />
+      </form>
+
+      <section class="Social">
+        <p>Redes sociales</p>
+
+        <div class="Links">
+          <a href="https://www.facebook.com">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+
+          <a href="https://www.twitter.com">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com">
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
